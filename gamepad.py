@@ -139,29 +139,29 @@ class LEDs:
         [LED.off() for LED in LEDs.all]
 
 
-##EXAMPLES
+# # # EXAMPLES
 
-# write text to the lcd (two lines of width 16 charachters)
-# only write to the LCD screen at least 150ms after previously writing as it may cause errors to occur that will not be caught by the code
-lcd.write("text line 1", "text line 2")
+# # write text to the lcd (two lines of width 16 charachters)
+# # only write to the LCD screen at least 150ms after previously writing as it may cause errors to occur that will not be caught by the code
+# lcd.write("text line 1", "text line 2")
 
-# clear LCD screen
-lcd.clear()
+# # clear LCD screen
+# lcd.clear()
 
-# get text currently on the LCD screen ass array [line1,line2]
-lcd.get_text()
+# # get text currently on the LCD screen ass array [line1,line2]
+# lcd.get_text()
 
-# turn on/off specific LED (colours are white, yellow, green, blue,red,cyan)
-LEDs.blue.on()
-LEDs.yellow.off()
+# # turn on/off specific LED (colours are white, yellow, green, blue,red,cyan)
+# LEDs.blue.on()
+# LEDs.yellow.off()
 
-# turn on/off ALL LEDs
-LEDs.all_on()
-LEDs.all_off()
+# # turn on/off ALL LEDs
+# LEDs.all_on()
+# LEDs.all_off()
 
-# get input from specific button (a,b,up,down,left,right => returns True when pressed, and False if not. returns None if there is an error)
-button.a.as_digital()
-button.left.as_digital()
+# # get input from specific button (a,b,up,down,left,right => returns True when pressed, and False if not. returns None if there is an error)
+# button.a.as_digital()
+# button.left.as_digital()
 
-# get input from dpad as array of [up,down,left,right]
-[b.as_digital() for b in button.dpad]
+# # get input from dpad as array of [up,down,left,right]
+# [b.as_digital() for b in button.dpad]
